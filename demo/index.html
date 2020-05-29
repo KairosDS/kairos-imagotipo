@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <title>kairos-imagotipo demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, manufosela-scalable=yes">
+    <script type="module" src="../kairos-imagotipo.js"></script>
+    <style>
+      .blocks {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+      }
+      .block {
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        white-space: normal;
+      }
+      .code {
+        padding: 20px;
+        color:#FFF; 
+        background: #000;
+      }
+      .attributes {
+        padding-left: 20px;
+      }
+      kairos-imagotipo {
+        margin:10px;
+      }
+      .imagotipo1 {
+        --imagotipo-size: 100px;
+        z-index:11;
+      }
+      .imagotipo2 {
+        --imagotipo-size: 150px;
+        z-index:11;
+      }
+      .imagotipo3 {
+        --imagotipo-size: 80px;
+        z-index:11;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic kairos-imagotipo Demo</h3>
+      <div class="blocks">
+        <pre class="block code">
+          <code>
+            &lt;kairos-imagotipo&gt;&lt;/kairos-imagotipo&gt;
+          </code>
+        </pre>
+        <pre class="block attributes">
+          <h3>Attributes</h3>
+          <ul>
+            <li>property1 (String)</li>
+            <li>property2 (Number)</li>
+          </ul>
+        </pre>
+      </div>
+
+      <kairos-imagotipo class="imagotipo1"></kairos-imagotipo>
+      <kairos-imagotipo class="imagotipo2" animation></kairos-imagotipo>
+      <kairos-imagotipo class="imagotipo3" animation time-velocity='5'></kairos-imagotipo>
+    </div>
+  </body>
+</html>
